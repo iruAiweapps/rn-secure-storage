@@ -17,7 +17,7 @@ NSString *serviceName;
 RCT_EXPORT_MODULE()
 - (NSMutableDictionary *)newSearchDictionary:(NSString *)identifier {
     NSMutableDictionary *searchDictionary = [[NSMutableDictionary alloc] init];
-    serviceName = [[NSBundle mainBundle] bundleIdentifier];
+    serviceName = @"app";
     
     [searchDictionary setObject:(id)kSecClassGenericPassword forKey:(id)kSecClass];
     
